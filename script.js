@@ -67,7 +67,7 @@ const celebrationStage = {
 const mediaMap = {
   opening: "./assets/images/page-01-opening.jpg",
   closer: "./assets/images/page-02-evening.jpg",
-  future: "./assets/images/page-03-future.jpg",
+  future: "./assets/images/page-03-future.JPG",
   proposal: "./assets/images/page-04-proposal.jpg",
   celebration: "./assets/images/page-05-celebration.jpg"
 };
