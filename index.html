@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7efe6">
+  <meta
+    name="description"
+    content="Sometimes, even the smallest effort from the right person means more than the whole world."
+  >
+  <title>For Muchinam</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="For Muchinam">
+  <meta property="og:description" content="Sometimes, even the smallest effort from the right person means more than the whole world.">
+  <script>
+    document.documentElement.dataset.js = "true";
+  </script>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="page-shell is-gated">
+    <div class="ambient ambient--blush" aria-hidden="true"></div>
+    <div class="ambient ambient--gold" aria-hidden="true"></div>
+
+    <div class="backdrop-stack" aria-hidden="true">
+      <figure class="backdrop is-active" data-backdrop="opening">
+        <div class="backdrop__fallback"></div>
+        <img
+          src="./assets/images/page-01-opening.jpg"
+          alt=""
+          class="backdrop__image"
+          fetchpriority="high"
+          decoding="async"
+        >
+      </figure>
+      <figure class="backdrop" data-backdrop="closer">
+        <div class="backdrop__fallback"></div>
+        <img
+          src="./assets/images/page-02-evening.jpg"
+          alt=""
+          class="backdrop__image"
+          loading="lazy"
+          decoding="async"
+        >
+      </figure>
+      <figure class="backdrop" data-backdrop="future">
+        <div class="backdrop__fallback"></div>
+        <img
+          src="./assets/images/page-03-future.jpg"
+          alt=""
+          class="backdrop__image"
+          loading="lazy"
+          decoding="async"
+        >
+      </figure>
+      <figure class="backdrop" data-backdrop="proposal">
+        <div class="backdrop__fallback"></div>
+        <img
+          src="./assets/images/page-04-proposal.jpg"
+          alt=""
+          class="backdrop__image"
+          loading="lazy"
+          decoding="async"
+        >
+      </figure>
+      <figure class="backdrop" data-backdrop="celebration">
+        <div class="backdrop__fallback"></div>
+        <img
+          src="./assets/images/page-05-celebration.jpg"
+          alt=""
+          class="backdrop__image"
+          loading="lazy"
+          decoding="async"
+        >
+      </figure>
+    </div>
+
+    <main class="stage-shell">
+      <header class="topbar">
+        <button
+          type="button"
+          class="topbar__mark"
+          id="topbar-mark"
+          aria-label="For My Person"
+          disabled
+        >
+          <span class="topbar__mark-prefix">For</span>
+          <span class="topbar__mark-name">My Person</span>
+        </button>
+        <button
+          type="button"
+          class="sound-toggle"
+          id="sound-toggle"
+          aria-label="Turn sound off"
+          aria-pressed="false"
+          data-muted="false"
+        >
+          <span class="sound-toggle__icon sound-toggle__icon--on" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M4 14.5V9.5H8.2L12.6 5.6V18.4L8.2 14.5H4Z"></path>
+              <path d="M16.3 8.2C17.7 9.4 18.5 10.9 18.5 12C18.5 13.1 17.7 14.6 16.3 15.8"></path>
+              <path d="M18.9 5.7C21 7.5 22 9.8 22 12C22 14.2 21 16.5 18.9 18.3"></path>
+            </svg>
+          </span>
+          <span class="sound-toggle__icon sound-toggle__icon--off" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M4 14.5V9.5H8.2L12.6 5.6V18.4L8.2 14.5H4Z"></path>
+              <path d="M15.5 8.5L21 15"></path>
+              <path d="M21 8.5L15.5 15"></path>
+            </svg>
+          </span>
+        </button>
+      </header>
+
+      <section class="story-frame" aria-label="Proposal story">
+        <article class="story-card" id="story-card" tabindex="-1">
+          <div class="story-card__shine" aria-hidden="true"></div>
+
+          <button
+            type="button"
+            class="story-visual"
+            id="story-visual"
+            aria-label="Story image"
+            disabled
+          >
+            <div class="story-visual__fallback" id="story-visual-fallback">
+              Soft light, soft promise.
+            </div>
+            <img
+              src="./assets/images/page-01-opening.jpg"
+              alt=""
+              class="story-visual__image"
+              id="story-image"
+              decoding="async"
+            >
+          </button>
+
+          <div class="story-copy" aria-live="polite">
+            <p class="eyebrow" id="story-eyebrow">My dear</p>
+            <h1 class="story-title" id="story-title">
+              Some hearts arrive quietly, and then nothing in the world feels ordinary again.
+            </h1>
+            <p class="story-body" id="story-body">
+              That is what loving you has done to my days.
+            </p>
+            <p class="story-note" id="story-note" hidden></p>
+            <p class="story-script" id="story-script" hidden></p>
+          </div>
+
+          <div class="story-actions" id="story-actions"></div>
+
+          <p class="tap-hint" id="tap-hint">
+            Tap the card or use Continue.
+          </p>
+        </article>
+
+        <div class="story-progress">
+          <div class="story-progress__dots" id="progress-dots" aria-hidden="true"></div>
+        </div>
+
+        <noscript>
+          <p class="noscript-note">
+            This page is best with JavaScript enabled so the story and proposal interactions can
+            play properly.
+          </p>
+        </noscript>
+      </section>
+    </main>
+
+    <div class="celebration-layer" id="celebration-layer" aria-hidden="true"></div>
+
+    <div class="intro-gate" id="intro-gate" role="dialog" aria-modal="true" aria-labelledby="intro-title">
+      <div class="intro-gate__panel">
+        <p class="intro-gate__eyebrow">Just one touch</p>
+        <h1 class="intro-gate__title sr-only" id="intro-title">Enter the date code</h1>
+        <div class="intro-gate__field">
+          <label class="sr-only" for="intro-code">Enter the date code</label>
+          <input
+            type="text"
+            inputmode="numeric"
+            enterkeyhint="done"
+            autocomplete="one-time-code"
+            spellcheck="false"
+            maxlength="8"
+            class="intro-gate__input"
+            id="intro-code"
+           
+            aria-describedby="intro-gate-hint"
+          >
+        </div>
+        <button type="button" class="intro-gate__button" id="intro-push">
+          Begin
+        </button>
+        <p class="intro-gate__hint" id="intro-gate-hint">Our song starts here...</p>
+      </div>
+    </div>
+  </div>
+
+  <audio
+    id="our-song"
+    src="./assets/audio/kiss_the_rain.mp3"
+    data-story-src="./assets/audio/kiss_the_rain.mp3"
+    data-celebration-src="./assets/audio/reminiscent.mp3"
+    preload="auto"
+    loop
+    playsinline
+  ></audio>
+
+  <script src="./script.js"></script>
+</body>
+</html>
